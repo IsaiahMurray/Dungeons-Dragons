@@ -29,4 +29,18 @@ namespace ClassLibrary1.Gameplay
             return result + modifier;
         }
     }
+
+    public class DamageDice
+    {
+        public int NumberOfDice { get; set; }
+        public int NumberOfSides { get; set; }
+        public int Modifier { get; set; }
+
+        public DamageDice(int numberOfDice, int numberOfSides, int modifier)
+        {
+            NumberOfDice = numberOfDice;
+            NumberOfSides = numberOfSides;
+            Modifier = modifier;
+        }
+    }
 }

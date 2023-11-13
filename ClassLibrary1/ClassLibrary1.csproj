@@ -6,4 +6,33 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Character\Backgrounds\Common\" />
+    <Folder Include="Character\Backgrounds\AL_CurseOfStrahd\" />
+    <Folder Include="Character\Backgrounds\AL_Mulmaster\" />
+    <Folder Include="Character\Backgrounds\AL_Hillsfar\" />
+    <Folder Include="Character\Backgrounds\Acquisitions_Inc\" />
+    <Folder Include="Character\Backgrounds\Amonkket\" />
+    <Folder Include="Character\Backgrounds\Dragonlance\" />
+    <Folder Include="Character\Backgrounds\Innstrad\" />
+    <Folder Include="Character\Backgrounds\Homebrew\" />
+    <Folder Include="Character\Backgrounds\OptionalFeatures\" />
+    <Folder Include="Character\Backgrounds\Spelljammer\" />
+    <Folder Include="Character\Backgrounds\Wildemount\" />
+    <Folder Include="Character\Backgrounds\Strixhaven\" />
+    <Folder Include="Character\Backgrounds\Ravnica\" />
+    <Folder Include="Character\Backgrounds\UnearthedArcana\" />
+    <Folder Include="Character\Feats\Dragonlance\" />
+    <Folder Include="Character\Feats\Homebrew\" />
+    <Folder Include="Character\Feats\PlaneShift\" />
+    <Folder Include="Character\Feats\Strixhaven\" />
+    <Folder Include="Character\Feats\UnearthedArcana\" />
+    <Folder Include="Character\Feats\Published\" />
+    <Folder Include="Character\Races\ExoticRace\" />
+    <Folder Include="Character\Races\MonstrousRace\" />
+    <Folder Include="Character\Races\CustomRace\" />
+    <Folder Include="Character\Races\UneatheredArcanaRace\" />
+    <Folder Include="Character\Races\SettingSpecificRace\" />
+  </ItemGroup>
+
 </Project>
