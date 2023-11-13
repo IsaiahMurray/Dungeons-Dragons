@@ -22,7 +22,6 @@ namespace ClassLibrary1.Character
     {
         public TypeOfTrait TraitType { get; set; }
         string Name { get; }
-        string Description { get; }
 
 
         //Effect property => function that alters something

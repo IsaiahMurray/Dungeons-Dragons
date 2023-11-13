@@ -10,6 +10,7 @@ namespace ClassLibrary1.Character.Skills
     public enum TypeOfSkill {  Strength, Dexterity, Intelligence, Wisdom, Charisma };
     public class SkillList
     {
+        public List<Skill> skillList = new List<Skill>();
     public class Skill
     {
         public TypeOfSkill SkillType { get; set; }
@@ -17,7 +18,6 @@ namespace ClassLibrary1.Character.Skills
         public string Description { get; set; }
     }
 
-        public List<Skill> skillList = new List<Skill>();
 
         //Strength
         public class Atheltics : Skill

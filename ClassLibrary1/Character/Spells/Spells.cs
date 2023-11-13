@@ -7,6 +7,17 @@ using ClassLibrary1.Gameplay;
 
 namespace ClassLibrary1.Character.Spells
 {
+    public enum SpellSchool
+    {
+        Abjuration,
+        Conjuration,
+        Divination,
+        Enchantment,
+        Evocation,
+        Illusion,
+        Necromancy,
+        Transmutation
+    }
     public class Spell
     {
         // Properties
@@ -21,13 +32,15 @@ namespace ClassLibrary1.Character.Spells
         public DamageDice Damage { get; set; }
         public Dictionary<int, DamageDice> HigherLevelDamage { get; set; }
         public List<string> SpellLists { get; set; }
+        public SpellSchool School { get; set; } // Enum property for the school of magic
+
 
         // Constructor
         public Spell(
         string name, int level, string description, string source,
         string castingTime, string range, List<SpellComponent> components,
         string duration, DamageDice damage, Dictionary<int, DamageDice> higherLevelDamage,
-        List<string> spellLists)
+        List<string> spellLists, SpellSchool school)
         {
             Name = name;
             Level = level;
@@ -40,6 +53,7 @@ namespace ClassLibrary1.Character.Spells
             Damage = damage;
             HigherLevelDamage = higherLevelDamage;
             SpellLists = spellLists;
+            School = school;
         }
 
         // Method to cast the spell
