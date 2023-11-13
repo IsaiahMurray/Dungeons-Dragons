@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ClassLibrary1.Character.Skills;
+using static ClassLibrary1.Character.Skills.SkillList;
 
 namespace ClassLibrary1.Character.CharacterClasses
 {
     public class Barbarian
     {
         private Character character;
-        public int BarbarianLevel { get; private set; }
         public int HitPoints { get; private set; }
         public List<string> Proficiencies { get; private set; }
-        public List<SkillList.Skill> Skills { get; private set; }
+        public List<Skill> Skills { get; private set; }
         public List<string> Equipment { get; private set; }
         public int Rages { get; private set; }
 
@@ -21,9 +20,6 @@ namespace ClassLibrary1.Character.CharacterClasses
 
         public void LevelUp()
         {
-            BarbarianLevel++;
-            // Access the Character's Level property
-            int characterLevel = character.Level;
             // Adjust properties based on Barbarian level
             UpdateHitPoints();
             UpdateRages();

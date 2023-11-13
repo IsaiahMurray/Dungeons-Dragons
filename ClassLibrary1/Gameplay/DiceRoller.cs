@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1.Gameplay
 {
+    public enum DiceType { d4, d6, d8, d10, d12, d20 }
+
     public static class DiceRoller
     {
         private static readonly Random Random = new Random();
 
         // Roll a specified number of dice with a specific number of sides
-        public static int Roll(int numberOfDice, int numberOfSides, int modifier = 0)
+        public static int Roll(int numberOfDice, DiceType die, int modifier = 0)
         {
-            if (numberOfDice <= 0 || numberOfSides <= 0)
+            if (numberOfDice <= 0 || modifier < 0)
             {
-                throw new ArgumentException("Number of dice and number of sides must be greater than 0");
+                throw new ArgumentException("Number of dice must be greater than 0, and modifier must not be negative");
             }
 
             int result = 0;
@@ -23,24 +25,34 @@ namespace ClassLibrary1.Gameplay
             // Roll each die and accumulate the total
             for (int i = 0; i < numberOfDice; i++)
             {
-                result += Random.Next(1, numberOfSides + 1);
+                result += Random.Next(1, GetNumberOfSides(die) + 1);
             }
 
             return result + modifier;
         }
-    }
 
-    public class DamageDice
-    {
-        public int NumberOfDice { get; set; }
-        public int NumberOfSides { get; set; }
-        public int Modifier { get; set; }
-
-        public DamageDice(int numberOfDice, int numberOfSides, int modifier)
+        private static int GetNumberOfSides(DiceType diceType)
         {
-            NumberOfDice = numberOfDice;
-            NumberOfSides = numberOfSides;
-            Modifier = modifier;
+            // You can directly use the enum values without assigning integer values
+            switch (diceType)
+            {
+                case DiceType.d4:
+                    return 4;
+                case DiceType.d6:
+                    return 6;
+                case DiceType.d8:
+                    return 8;
+                case DiceType.d10:
+                    return 10;
+                case DiceType.d12:
+                    return 12;
+                case DiceType.d20:
+                    return 20;
+                default:
+                    throw new ArgumentException("Invalid dice type");
+            }
         }
     }
+
+
 }

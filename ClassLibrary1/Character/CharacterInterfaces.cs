@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary1.Character.Traits;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,12 @@ namespace ClassLibrary1.Character
     {
         string ClassName { get; }
         string Description { get; }
-
+        List<Trait> Traits { get; }
     }
 
 
     // Interface for traits
-    public enum TypeOfTrait { ClassTrait, RaceTrait, }
+    public enum TypeOfTrait { ClassTrait, RacialFeat }
     public interface ITrait
     {
         public TypeOfTrait TraitType { get; set; }
@@ -31,17 +32,19 @@ namespace ClassLibrary1.Character
     public interface IRace
     {
         string Name { get; }
-        List<ITrait> Traits { get; }
+        public string Description { get; }
+
+        List<Trait> Traits { get; }
     }
     public abstract class Race : IRace
     {
         public string Name { get; protected set; }
         public string Description { get; protected set; }
-        public List<ITrait> Traits { get; protected set; }
+        public List<Trait> Traits { get; protected set; }
 
         protected Race()
         {
-            Traits = new List<ITrait>();
+            Traits = new List<Trait>();
         }
     }
 
@@ -50,6 +53,6 @@ namespace ClassLibrary1.Character
     public interface ILineage
     {
         TypeOfLineage LineageType { get; }
-        List<IRace> Races { get; }
+        List<Race> Races { get; }
     }
 }

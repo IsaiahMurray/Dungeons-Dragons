@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ClassLibrary1.Character;
 
-namespace ClassLibrary1.Character
+namespace ClassLibrary1.Character.Traits
 {
     public abstract class Trait : ITrait
     {
@@ -14,12 +13,4 @@ namespace ClassLibrary1.Character
         public string Description { get; protected set; }
     }
 
-    /*public class SpeedTrait : Trait
-    {
-        public SpeedTrait()
-        {
-            Name = "Increased Speed";
-            Description = "This race has increased movement speed.";
-        }
-    } */
 }
