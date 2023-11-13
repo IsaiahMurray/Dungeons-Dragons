@@ -9,6 +9,7 @@ namespace ClassLibrary1.Character
 {
     public abstract class Trait : ITrait
     {
+        public TypeOfTrait TraitType { get; set; }
         public string Name { get; protected set; }
         public string Description { get; protected set; }
     }

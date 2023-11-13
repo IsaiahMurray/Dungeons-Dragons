@@ -20,6 +20,7 @@ namespace ClassLibrary1.Character
     public enum TypeOfTrait { ClassTrait, RaceTrait, }
     public interface ITrait
     {
+        public TypeOfTrait TraitType { get; set; }
         string Name { get; }
         string Description { get; }
 
