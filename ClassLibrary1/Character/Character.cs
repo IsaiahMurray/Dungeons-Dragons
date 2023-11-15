@@ -37,6 +37,7 @@ namespace ClassLibrary1.Character
         public int Level { get; set; }
         public Alignment Alignment { get; set; }
         public Race Race { get; set; }
+        public Race Subrace { get; set; }
         public Size Size { get; set; }  
         public int Speed { get; set; }
         public ArmorClass ArmorClass { get; set; }
@@ -54,6 +55,7 @@ namespace ClassLibrary1.Character
         //public CharacterClass Class { get; set; }
         public List<Trait> Features { get; set; }
         public List<Item> Equipment { get; set; }
+        public List<string> Languages { get; set; }
 
         public void LevelUp()
         {

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1.csproj", "{6BDD2033-520E-49B0-B504-21FCC0A8C951}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnDGame", "DnDGame.csproj", "{6BDD2033-520E-49B0-B504-21FCC0A8C951}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\ClassLibrary1\ClassLibrary1.csproj", "{ADDC3E33-D2A0-4D64-BD11-AD1302A2AA68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnDTests", "..\DnDTests\DnDTests.csproj", "{C40DA465-F9B7-456C-B949-80354F679306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{ADDC3E33-D2A0-4D64-BD11-AD1302A2AA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADDC3E33-D2A0-4D64-BD11-AD1302A2AA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADDC3E33-D2A0-4D64-BD11-AD1302A2AA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40DA465-F9B7-456C-B949-80354F679306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40DA465-F9B7-456C-B949-80354F679306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40DA465-F9B7-456C-B949-80354F679306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40DA465-F9B7-456C-B949-80354F679306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

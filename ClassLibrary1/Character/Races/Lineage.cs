@@ -14,7 +14,7 @@ namespace ClassLibrary1.Character.Lineage
     {
         //Define the required properties from the interface
         public required TypeOfLineage LineageType { get; set; }
-        public required List<IRace> Races { get; set; }
+        public required List<Race> Races { get; set; }
 
         //Build a constructor that defines the set properties
         public CommonLineage()
@@ -36,7 +36,7 @@ namespace ClassLibrary1.Character.Lineage
             };
 
             //Add the list to the list of Races property
-            Races.AddRange(commonRaces);
+            Races.AddRange((IEnumerable<Race>)commonRaces);
         }        
     }
 }

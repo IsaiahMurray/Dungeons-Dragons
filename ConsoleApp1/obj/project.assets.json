@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "ClassLibrary1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ClassLibrary1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibrary1.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ClassLibrary1/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary1/ClassLibrary1.csproj",
+      "msbuildProject": "../ClassLibrary1/ClassLibrary1.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "ClassLibrary1 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\murra\\.nuget\\packages\\": {},
@@ -15,9 +34,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\DnDGame.csproj",
+      "projectName": "DnDGame",
+      "projectPath": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\DnDGame.csproj",
       "packagesPath": "C:\\Users\\murra\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
@@ -42,7 +61,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ClassLibrary1\\ClassLibrary1.csproj": {
+              "projectPath": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ClassLibrary1\\ClassLibrary1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

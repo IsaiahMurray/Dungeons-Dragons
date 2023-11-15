@@ -10,17 +10,32 @@ namespace ClassLibrary1.Character.Lineage.CommonRace
 {
     public class DwarfRace : Race
     {
-        public List<Trait> Traits;
+        public DwarfRace(){}
         public DwarfRace(List<Trait> traits)
         {
             Name = "Dwarf";
             Description = "Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs – these common threads unite all dwarves.";
             Traits = traits;
         }
+        public string Name { get; }
+        public string Description { get; }
+        public List<Trait> Traits { get; set; }
     }
+    public class HillDwarf : DwarfRace
+    {
+        public string Name { get; }
+        public string Description { get; }
+        public List<Trait> Traits { get; set; }
+    }
+    public class MountainDwarf : DwarfRace 
+    {
+        public string Name { get; }
+        public string Description { get; }
+        public List<Trait> Traits { get; set; }
+    }
+
     public class DwarfTraits
     {
-        private Character character;
         private class ASIncrease : Trait
         {
             public ASIncrease()
@@ -141,6 +156,8 @@ namespace ClassLibrary1.Character.Lineage.CommonRace
             character.Proficiency.Add("Handaxe");
             character.Proficiency.Add("Light hammer");
             character.Proficiency.Add("War hammer");
+            character.Languages.Add("Common");
+            character.Languages.Add("Dwarvish");
 
         }
     }

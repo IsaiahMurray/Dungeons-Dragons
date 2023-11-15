@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nf4G3HvWDW8h5aaJX6ycYfWfu1tr9ucszUt+kYQ2Nc1/WyBj9SmHXc1neJURpxNWh44BFHL7++9XUYpdMGIiTg==",
+  "dgSpecHash": "WrZqSTm/1Hj/cRHyzaK4x3JdYM7g+hDjwNc4qgYnlO2yUEPDAVQJUrD+yjg196JTAnYNAlAaf/WHHmtoE6IJ7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "C:\\Users\\murra\\OneDrive\\Desktop\\Code\\DnD\\ConsoleApp1\\DnDGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,15 @@
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\DnDTests.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\DnDTests.pdb
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\obj\Debug\DnDTests.csproj.AssemblyReference.cache
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\obj\Debug\DnDTests.csproj.CoreCompileInputs.cache
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\obj\Debug\DnDTests.csproj.CopyComplete
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\obj\Debug\DnDTests.dll
+C:\Users\murra\OneDrive\Desktop\Code\DnD\DnDTests\obj\Debug\DnDTests.pdb

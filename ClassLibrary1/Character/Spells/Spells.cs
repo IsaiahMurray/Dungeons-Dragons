@@ -29,7 +29,7 @@ namespace ClassLibrary1.Character.Spells
         public string Range { get; set; }
         public List<SpellComponent> Components { get; set; }
         public string Duration { get; set; }
-        public DamageDice Damage { get; set; }
+        public DamageDice BaseDamage { get; set; }
         public Dictionary<int, DamageDice> HigherLevelDamage { get; set; }
         public List<string> SpellLists { get; set; }
         public SpellSchool School { get; set; } // Enum property for the school of magic
@@ -50,7 +50,7 @@ namespace ClassLibrary1.Character.Spells
             Range = range;
             Components = components;
             Duration = duration;
-            Damage = damage;
+            BaseDamage = damage;
             HigherLevelDamage = higherLevelDamage;
             SpellLists = spellLists;
             School = school;
@@ -67,7 +67,7 @@ namespace ClassLibrary1.Character.Spells
             Console.WriteLine($"Range: {Range}");
              Console.WriteLine($"Components: {GetComponentsString()}");
             Console.WriteLine($"Duration: {Duration}");
-            Console.WriteLine($"Damage Amount: {RollDamage(Damage)}");
+            Console.WriteLine($"Damage Amount: {RollDamage(BaseDamage)}");
 
             if (HigherLevelDamage != null && HigherLevelDamage.Count > 0)
             {
@@ -85,7 +85,7 @@ namespace ClassLibrary1.Character.Spells
         // Method to roll damage based on the given dice damage configuration
         private int RollDamage(DamageDice diceDamage)
         {
-            return DiceRoller.Roll(diceDamage.NumberOfDice, diceDamage.NumberOfSides, diceDamage.Modifier);
+            return DiceRoller.Roll(diceDamage.NumberOfDice, diceDamage.Type, diceDamage.Modifier);
         }
 
         // Method to get a string representation of spell components

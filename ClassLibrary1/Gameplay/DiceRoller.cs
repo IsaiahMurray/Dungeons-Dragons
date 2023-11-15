@@ -7,6 +7,19 @@ using System.Threading.Tasks;
 namespace ClassLibrary1.Gameplay
 {
     public enum DiceType { d4, d6, d8, d10, d12, d20 }
+    public struct DamageDice
+    {
+        public int NumberOfDice { get; }
+        public DiceType Type { get; }
+        public int Modifier { get; }
+
+        public DamageDice(int numberOfDice, DiceType type, int modifier = 0)
+        {
+            NumberOfDice = numberOfDice;
+            Type = type;
+            Modifier = modifier;
+        }
+    }
 
     public static class DiceRoller
     {

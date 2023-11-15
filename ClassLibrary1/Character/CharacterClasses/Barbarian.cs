@@ -39,7 +39,6 @@ namespace ClassLibrary1.Character.CharacterClasses
 
         public void DisplayDetails()
         {
-            Console.WriteLine($"Barbarian Level: {BarbarianLevel}");
             Console.WriteLine($"Hit Points: {HitPoints}");
             Console.WriteLine("Proficiencies:");
             foreach (var proficiency in Proficiencies)
