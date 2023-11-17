@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary1.Character;
+using ClassLibrary1.Character.Lineage.CommonRace;
 using static DnDGame.UI.CreationMethods;
 
 namespace DnDGame.UI
 {
     public class ProgramUI
     {
-        private readonly Character _character = new Character();
         public void Run()
         {
             RunCreation();
@@ -44,15 +44,17 @@ namespace DnDGame.UI
         {
             CreationMethods creationMethods = new CreationMethods();
             Character character = new Character();
+            character.Race = new HumanRace();
             bool creationComplete = false;
 
             while (!creationComplete)
             {
                 Console.Clear();
+            Console.WriteLine(new DwarfRace().Name + " Da name");
                 Console.WriteLine("Here is your current character: \n" +
                     $"Name: {character.Name}\n" +
                     $"Level: {character.Level}\n" +
-                    $"Race: {character.Race.Name}\n" +
+                    $"Race: {creationMethods.GetRaceName(character.Race)}\n" +
                     $"Subrace: {character.Subrace}\n" +
                     $"Alignment: {character.Alignment}\n"
                     );
@@ -82,9 +84,12 @@ namespace DnDGame.UI
                             "5 - Halfling \n" +
                             "6 - Half Orc \n" +
                             "7 - Human \n" +
-                            "8 - Tiefling";
+                            "8 - Tiefling \n";
                         int input = creationMethods.GetNumberInput(prompt, 1, 8);
-                        character.Race = creationMethods.AssignRace(input);
+                        Race cRace;
+                        cRace = creationMethods.AssignRace(input);
+                        character.Race = cRace;
+                        Console.ReadLine();
                         break;
 
                     default: break;

@@ -51,39 +51,49 @@ namespace DnDGame.UI
             switch (input)
             {
                 case 1:
-                    DragonbornRace dragonborn = new DragonbornRace();
+                    DragonbornRace dragonborn = new();
                     race = dragonborn;
                     break;
                 case 2:
-                    DwarfRace dwarf = new DwarfRace();
+                    Console.WriteLine("You chose Dwarf");
+                    DwarfRace dwarf = new();
                     race = dwarf;
+                    Console.WriteLine(race.Name);
                     break;
                 case 3:
-                    ElfRace elf = new ElfRace();
+                    ElfRace elf = new();
                     race = elf;
                     break;
                 case 4:
-                    HalfElfRace halfElf = new HalfElfRace();
+                    HalfElfRace halfElf = new();
                     race = halfElf;
                     break;
                 case 5:
-                    HalflingRace halfling = new HalflingRace();
+                    HalflingRace halfling = new();
                     race = halfling;
                     break;
                 case 6:
-                    HalfOrcRace halfOrc = new HalfOrcRace();
+                    HalfOrcRace halfOrc = new();
                     race = halfOrc;
                     break;
                 case 7:
-                    HumanRace human = new HumanRace();
+                    HumanRace human = new();
                     race = human;
                     break;
                 case 8:
-                    TieflingRace tiefling = new TieflingRace();
+                    TieflingRace tiefling = new();
                     race = tiefling;
                     break;
             }
             return race;
+        }
+        public string GetRaceName(Race race)
+        {
+            if (race == null)
+            {
+                return "Bill";
+            }
+            else { return race.Name; }
         }
     }
 }
